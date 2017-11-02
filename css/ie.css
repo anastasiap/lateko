@@ -1,0 +1,21 @@
+/* line 3, ../sass/ie.scss */
+.kalkulators .col-xs-5 + .col-xs-7 .input-group, .ligums .col-xs-5 + .col-xs-7 .input-group {
+  width: 100px;
+}
+/* line 9, ../sass/ie.scss */
+.kalkulators .col-xs-7.form-section .input-group, .ligums .col-xs-7.form-section .input-group {
+  width: 100px;
+}
+/* line 15, ../sass/ie.scss */
+.kalkulators .form-section + .col-xs-5 .input-group, .ligums .form-section + .col-xs-5 .input-group {
+  width: 100px;
+}
+/* line 20, ../sass/ie.scss */
+.kalkulators .checkbox, .ligums .checkbox {
+  font-size: 8px;
+  bottom: -2;
+}
+/* line 27, ../sass/ie.scss */
+.kalkulators .col-xs-7 .col-xs-9 .input-group, .ligums .col-xs-7 .col-xs-9 .input-group {
+  width: 100px;
+}

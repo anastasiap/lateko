@@ -1,0 +1,119 @@
+/* line 3, ../sass/table.scss */
+.table-wrapper {
+  background-color: #c3d9ea;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+/* line 8, ../sass/table.scss */
+.table-wrapper .table {
+  margin-bottom: 0;
+}
+/* line 12, ../sass/table.scss */
+.table-wrapper .col-xs-3 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/* line 16, ../sass/table.scss */
+.table-wrapper .col-xs-3:last-child {
+  padding-right: 15px;
+  border-right: 0;
+}
+/* line 20, ../sass/table.scss */
+.table-wrapper .col-xs-3:first-child {
+  padding-left: 15px;
+}
+
+/* line 26, ../sass/table.scss */
+.table-header {
+  padding-top: 20px;
+}
+
+/* line 30, ../sass/table.scss */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 3px 2px;
+  font-size: 11px;
+  text-align: center;
+  color: #323232;
+  border-top: 0;
+}
+
+/* line 43, ../sass/table.scss */
+.table > thead > tr > th {
+  background-color: #69a0cc;
+  color: white;
+  border-bottom: 2px solid #69a0cc;
+}
+
+/* line 50, ../sass/table.scss */
+.table > tbody > tr > td:last-child {
+  font-weight: 700;
+}
+
+/* line 55, ../sass/table.scss */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #b4cfe5;
+}
+
+/* line 62, ../sass/table.scss */
+.pieteikumu-saraksts .table > thead > tr > th,
+.pieteikumu-saraksts .table > tbody > tr > th,
+.pieteikumu-saraksts .table > tfoot > tr > th,
+.pieteikumu-saraksts .table > thead > tr > td,
+.pieteikumu-saraksts .table > tbody > tr > td,
+.pieteikumu-saraksts .table > tfoot > tr > td,
+.ligumu-saraksts .table > thead > tr > th,
+.ligumu-saraksts .table > tbody > tr > th,
+.ligumu-saraksts .table > tfoot > tr > th,
+.ligumu-saraksts .table > thead > tr > td,
+.ligumu-saraksts .table > tbody > tr > td,
+.ligumu-saraksts .table > tfoot > tr > td,
+.veikala-saraksts .table > thead > tr > th,
+.veikala-saraksts .table > tbody > tr > th,
+.veikala-saraksts .table > tfoot > tr > th,
+.veikala-saraksts .table > thead > tr > td,
+.veikala-saraksts .table > tbody > tr > td,
+.veikala-saraksts .table > tfoot > tr > td {
+  text-align: left;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+/* line 81, ../sass/table.scss */
+.ligumu-saraksts .table > thead > tr > th:first-child,
+.ligumu-saraksts .table > tbody > tr > th:first-child,
+.ligumu-saraksts .table > tfoot > tr > th:first-child,
+.ligumu-saraksts .table > thead > tr > td:first-child,
+.ligumu-saraksts .table > tbody > tr > td:first-child,
+.ligumu-saraksts .table > tfoot > tr > td:first-child {
+  width: 13%;
+}
+/* line 84, ../sass/table.scss */
+.ligumu-saraksts .table > thead > tr > th:last-child,
+.ligumu-saraksts .table > tbody > tr > th:last-child,
+.ligumu-saraksts .table > tfoot > tr > th:last-child,
+.ligumu-saraksts .table > thead > tr > td:last-child,
+.ligumu-saraksts .table > tbody > tr > td:last-child,
+.ligumu-saraksts .table > tfoot > tr > td:last-child {
+  width: 16%;
+}
+
+/* line 90, ../sass/table.scss */
+.client-name {
+  font-weight: 700;
+  width: 20%;
+}
+
+/* line 95, ../sass/table.scss */
+.product-price {
+  width: 15%;
+}
+
+/* line 99, ../sass/table.scss */
+.theader-name {
+  width: 20%;
+}

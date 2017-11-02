@@ -1,0 +1,32 @@
+.kalkulators, .ligums {
+	.col-xs-5 + .col-xs-7 {
+		.input-group {
+			width: 100px;
+		}
+	}
+
+	.col-xs-7.form-section {
+		.input-group {
+			width: 100px;
+		}
+	}
+
+	.form-section + .col-xs-5  {
+		.input-group {
+			width: 100px;
+		}				
+	}
+
+	.checkbox {
+		font-size: 8px;
+		bottom: -2;
+	}
+
+	.col-xs-7 {
+		.col-xs-9 {
+			.input-group {
+				width: 100px;
+			}	
+		}
+	}
+}

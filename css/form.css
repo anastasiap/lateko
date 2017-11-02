@@ -1,0 +1,217 @@
+/* line 3, ../sass/form.scss */
+.form-wrapper {
+  background-color: #edf1f3;
+  padding: 15px;
+}
+
+/* line 8, ../sass/form.scss */
+.form-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 13, ../sass/form.scss */
+.form-group {
+  margin-bottom: 10px;
+}
+/* line 17, ../sass/form.scss */
+.form-group .input-group .form-control {
+  width: 80px;
+  text-align: right;
+}
+
+/* line 24, ../sass/form.scss */
+.control-label {
+  font-size: 11px;
+  line-height: 0.9;
+  font-weight: 500;
+  padding-right: 0;
+  padding-top: 8px;
+}
+
+/* line 32, ../sass/form.scss */
+.form-control {
+  height: 26px;
+  border-color: #69a0cc;
+  font-size: 12px;
+  border-radius: 0;
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 40, ../sass/form.scss */
+option.form-control {
+  padding-left: 10px;
+}
+
+/* line 44, ../sass/form.scss */
+.input-group-addon {
+  background-color: #69a0cc;
+  border-color: transparent;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  padding: 6px;
+}
+/* line 52, ../sass/form.scss */
+.input-group-addon:last-child {
+  border-left: 0 none;
+  width: 40px;
+}
+
+/* line 58, ../sass/form.scss */
+.form-control[disabled],
+fieldset[disabled] .form-control,
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: default;
+}
+
+/* line 69, ../sass/form.scss */
+.section-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding-top: 10px;
+}
+
+/* line 75, ../sass/form.scss */
+.section-bottom {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* line 81, ../sass/form.scss */
+.glyphicon-arrow-right {
+  color: #69a0cc;
+  position: absolute;
+  right: -7px;
+  top: 7px;
+}
+
+/* line 89, ../sass/form.scss */
+.pieteikums .row + h4, .ligums .row + h4 {
+  padding-top: 20px;
+}
+
+/* line 94, ../sass/form.scss */
+.kalkulators {
+  /* label[for="maksajuma-menesi"] {
+  	margin-left: 22px;
+  } */
+  /* .btns-wrapper {
+  	padding-right: 15px;
+  } */
+}
+
+/* line 105, ../sass/form.scss */
+.avanss-block .form-section {
+  background-color: white;
+  width: 420px;
+  margin-right: 2px;
+}
+/* line 110, ../sass/form.scss */
+.avanss-block .form-section .form-group {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* line 115, ../sass/form.scss */
+.avanss-block .form-section:first-child {
+  margin-left: 8px;
+}
+/* line 120, ../sass/form.scss */
+.avanss-block input[name="maksajuma-parcelsana"] + .input-group-addon {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+/* line 125, ../sass/form.scss */
+.avanss-block .checkbox {
+  position: absolute;
+  font-size: 11px;
+  bottom: 2px;
+}
+/* line 131, ../sass/form.scss */
+.avanss-block .radio input[type="radio"], .avanss-block .radio-inline input[type="radio"], .avanss-block .checkbox input[type="checkbox"], .avanss-block .checkbox-inline input[type="checkbox"] {
+  margin-left: -17px;
+  top: 3px;
+}
+/* line 136, ../sass/form.scss */
+.avanss-block .radio label, .avanss-block .checkbox label {
+  min-height: 0;
+  padding-left: 13px;
+}
+
+/* line 144, ../sass/form.scss */
+.pieteikums .form-section {
+  padding: 15px;
+  background-color: #aed7f1;
+}
+/* line 149, ../sass/form.scss */
+.pieteikums .group-header {
+  text-align: left;
+}
+/* line 153, ../sass/form.scss */
+.pieteikums .form-section.section-top.section-bottom {
+  margin-top: 30px;
+}
+/* line 156, ../sass/form.scss */
+.pieteikums .form-section.section-top.section-bottom .form-group {
+  margin-right: -5px !important;
+}
+/* line 161, ../sass/form.scss */
+.pieteikums #galvinieku-wrapper {
+  margin-bottom: 0;
+}
+/* line 165, ../sass/form.scss */
+.pieteikums #galvinieku-wrapper + .section-header {
+  margin-top: 25px;
+}
+
+/* line 172, ../sass/form.scss */
+.ienakumi .col-xs-6.control-label {
+  text-align: right;
+}
+
+/* line 177, ../sass/form.scss */
+.section-header {
+  background-color: #69a0cc;
+  padding: 3px 10px;
+  color: white;
+}
+
+/* line 183, ../sass/form.scss */
+.section-header.has-error {
+  background-color: #a94442;
+}
+
+/* line 187, ../sass/form.scss */
+.section-header.form-group {
+  margin-bottom: 0;
+}
+
+/* line 191, ../sass/form.scss */
+.section-wrapper {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 198, ../sass/form.scss */
+.veikala-saraksts .form-wrapper {
+  margin-bottom: 20px;
+}
+/* line 202, ../sass/form.scss */
+.veikala-saraksts .btns-wrapper {
+  padding-top: 0;
+  text-align: right;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 209, ../sass/form.scss */
+.veikala-saraksts .form-group {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

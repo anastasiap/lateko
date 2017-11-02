@@ -1,0 +1,213 @@
+@import 'vars';
+
+.form-wrapper {
+	background-color: $lighter-blue;
+	padding: 15px;
+}
+
+.form-title {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.form-group {
+  	margin-bottom: 10px;
+
+	.input-group {
+		.form-control {
+			width: 80px;
+			text-align: right;
+		}
+	}
+}
+
+.control-label {
+    font-size: 11px;
+    line-height: 0.9;
+    font-weight: 500;
+    padding-right: 0;
+    padding-top: 8px;
+}
+
+.form-control {
+	height: 26px;
+    border-color: #69a0cc;
+    font-size: 12px;
+    border-radius: 0;
+    padding: 4px 10px 4px 5px;
+}
+
+option.form-control {
+	padding-left: 10px;
+}
+
+.input-group-addon {
+	background-color: $main-color;
+	border-color: transparent;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 6px;
+
+    &:last-child {
+    	border-left: 0 none;
+    	width: 40px;
+    }
+}
+
+.form-control[disabled], 
+fieldset[disabled] .form-control,
+input[type="radio"][disabled], 
+input[type="checkbox"][disabled], 
+input[type="radio"].disabled, 
+input[type="checkbox"].disabled, 
+fieldset[disabled] input[type="radio"], 
+fieldset[disabled] input[type="checkbox"] {
+	cursor: default;
+}
+
+.section-top {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding-top: 10px;
+}
+
+.section-bottom {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.glyphicon-arrow-right {
+	color: $main-color;
+	position: absolute;
+	right: -7px;
+	top: 7px;
+}
+
+.pieteikums, .ligums {
+	.row + h4 {
+		padding-top: 20px;
+	}
+}
+
+.kalkulators {
+	/* label[for="maksajuma-menesi"] {
+		margin-left: 22px;
+	} */
+
+	/* .btns-wrapper {
+		padding-right: 15px;
+	} */
+}
+
+.avanss-block {
+	.form-section {
+		background-color: white;
+		width: 420px;
+		margin-right: 2px;
+
+		.form-group {
+		    margin-left: 15px;
+		    margin-right: 15px;
+		}
+
+		&:first-child {
+			margin-left: 8px;
+		}
+	}
+
+	input[name="maksajuma-parcelsana"] + .input-group-addon {
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+
+	.checkbox {
+		position: absolute;
+		font-size: 11px;
+		bottom: 2px;
+	}
+
+	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+		margin-left: -17px;
+		top: 3px;
+	}
+
+	.radio label, .checkbox label {
+		min-height: 0;
+    	padding-left: 13px;
+	}
+
+}
+
+.pieteikums {
+	.form-section {
+		padding: 15px;
+		background-color: $light-blue;
+	}
+
+	.group-header {
+	    text-align: left;
+	}
+
+	.form-section.section-top.section-bottom {
+		margin-top: 30px;
+
+		.form-group {
+		    margin-right: -5px !important;
+		}
+	}
+
+	#galvinieku-wrapper {
+		margin-bottom: 0;
+	}
+
+	#galvinieku-wrapper + .section-header {
+		margin-top: 25px;
+	}
+
+}
+
+.ienakumi {
+	.col-xs-6.control-label {
+		text-align: right;
+	}
+}
+
+.section-header {
+	background-color: $main-color;
+	padding: 3px 10px;
+	color: white;
+}
+
+.section-header.has-error {
+	background-color: $has-error;
+}
+
+.section-header.form-group {
+	margin-bottom: 0;
+}
+
+.section-wrapper {
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.veikala-saraksts {
+	.form-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.btns-wrapper {
+		padding-top: 0;
+		text-align: right;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.form-group {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}

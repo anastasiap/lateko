@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Lateko līzings</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo_alt.png" alt="Lateko līzings"></a>
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="info-wrapper">
+                    <span class="info-item">Firma: <span class="info-value">AB CV DARBS IK</span></span>
+                    <span class="info-item">Veikals: <span class="info-value">Elkor</span></span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="info-wrapper">
+                    <span class="info-item">Lietotajs: <span class="info-value">Vasilijs Pupkins</span></span>
+                    <a href="login.html">Aiziet<span class="glyphicon glyphicon-log-out"></span></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Patērētaju līzings</a></li>
+            <li role="presentation"><a href="#">Naudas kredīts</a></li>
+            <li role="presentation"><a href="#">Ekspress kredīts</a></li>
+            <li role="presentation"><a href="#">Pārkreditācija</a></li>
+        </ul>
+    </nav>
+
+<div class="main-wrapper">
+    <div class="row">
+        <div class="col-xs-3">
+            <aside>
+                <div class="sidebar">
+                    <div class="main-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Meklēt</button>
+                                </span>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li role="presentation" class="active"><a href="index.html">Kalkulators</a></li>
+                            <li role="presentation"><a href="pieteikums2.html">Jauns pieteikums</a></li>
+                            <li role="presentation"><a href="pieteikumu-saraksts.html">Pieteikumu saraksts</a></li>
+                            <li role="presentation"><a href="ligumu-saraksts.html">Līgumu saraksts</a></li>
+                            <li role="presentation"><a href="veikala-saraksts.html">Veikala izvēle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-xs-9">
+            <section class="kalkulators">
+                <h3 class="form-title">Maksājumu grafika aprēķins</h3>
+                <div class="form-wrapper clearfix">
+                    <div class="error-container hidden">
+                        <div class="section-header has-error">Pārbaudiet formu</div>
+                        <div class="section-wrapper">
+                            <span class="has-error"><span></span></span>
+                        </div>
+                    </div>
+                    <form class="form-horizontal" id="form-calculator" method="post" action="">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="form-group">
+                                    <label for="preces-cena" class="col-xs-5 control-label" autofocus="autofocus">Preces cena ar PVN</label>
+                                    <div class="col-xs-7">
+                                        <div class="input-group">
+                                            <input type="text" name="preces-cena" class="form-control" placeholder="0.00" id="preces-cena" required>
+                                            <span class="input-group-addon">EUR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-7">
+                                <div class="form-group">
+                                    <label for="preces-kategorija" class="control-label col-xs-3">Preces kategorija</label>
+                                    <div class="col-xs-9">
+                                        <select class="form-control" id="preces-kategorija" name="preces-kategorija" required>
+                                          <option></option>
+                                          <option value="" selected="selected">Izvēlieties preces kategoriju</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="form-group">
+                                    <label for="atmaksas-termins" class="col-xs-5 control-label">Atmaksas termiņš</label>
+                                    <div class="col-xs-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="0.00" id="atmaksas-termins" name="atmaksas-termins" required>
+                                            <span class="input-group-addon">mēn.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-7">
+                                <div class="form-group">
+                                    <label for="tarifu-grupa" class="control-label col-xs-3">Tarifu grupa</label>
+                                    <div class=" col-xs-9">
+                                        <select class="form-control" id="tarifu-grupa" name="tarifu-grupa" required>
+                                          <option></option>
+                                          <option value="" selected="selected">Nav piemērotu grupu</option>
+                                          <option>Kupon</option>
+                                          <option>Noteikumi (pirmā iem.no 0%)</option>
+                                          <option>Noteikumi(pirmā iem.no 50%)</option>
+                                          <option>Zelta klienta noteikumi(pirmā iem.no 0%)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="form-group">
+                                    <label for="kuponu-summa" class="col-xs-5 control-label">Kuponu summa</label>
+                                    <div class="col-xs-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="0.00" id="kuponu-summa" name="kuponu-summa">
+                                            <span class="input-group-addon">EUR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7"></div>
+                        </div>
+
+                        <div class="avanss-block">
+                            <div class="row">
+                                <div class="col-xs-7 form-section section-top">
+                                    <div class="form-group">
+                                        <label for="avanss-procenti" class="col-xs-3 control-label">Avanss</label>
+                                        <div class="col-xs-5">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="0.00" id="avanss-procenti" name="avanss-procenti">
+                                                <span class="input-group-addon">%</span>
+                                           </div>
+                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="avanss-summa" name="avanss-summa" disabled>
+                                                <span class="input-group-addon">EUR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-5 section-top">
+                                    <div class="form-group">
+                                        <label for="procentu-likme" class="col-xs-6 control-label">Procentu likme gadā</label>
+                                        <div class="col-xs-6">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="procentu-likme" name="procentu-likme" disabled>
+                                                <span class="input-group-addon">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-7 form-section">
+                                    <div class="form-group">
+                                        <label for="aizdevuma-kontroli" class="col-xs-3 control-label">Aizdevuma kontroli</label>
+                                        <div class="col-xs-5">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="aizdevuma-kontroli" name="aizdevuma-kontroli" disabled />
+                                                <span class="input-group-addon">%</span>
+                                            </div>
+                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="aizdevuma-kontroli-summa" name="aizdevuma-kontroli-summa" disabled />
+                                                <span class="input-group-addon">EUR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-5">
+                                    <div class="form-group">
+                                        <label for="apkalposana" class="col-xs-6 control-label">Apkalpošana</label>
+                                        <div class="col-xs-6">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="apkalposana" name="apkalposana" disabled />
+                                                <span class="input-group-addon">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-7 form-section section-bottom">
+                                    <div class="form-group">
+                                        <label for="summa-apmaksai" class="col-xs-8 control-label">Summa apmaksai parakstīšanas dienā</label>
+                                        <div class="col-xs-4">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="0.00" id="summa-apmaksai" name="summa-apmaksai" />
+                                                <span class="input-group-addon">EUR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-5">
+                                    <div class="form-group">
+                                        <label for="gpl" class="col-xs-6 control-label">Gada procentu likme (GPL)</label>
+                                        <div class="col-xs-6">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="0.00" id="gpl" name="gpl" disabled />
+                                                <span class="input-group-addon">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-7">
+                                <div class="form-group">
+                                    <label for="maksajuma-menesi" class="col-xs-3 control-label">Maksājuma summa mēnesī</label>
+                                    <div class="col-xs-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="0.00" id="maksajuma-menesi" name="maksajuma-menesi" />
+                                            <span class="input-group-addon">EUR</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4"></div>
+                        </div>
+
+                        <div class="btns-wrapper">
+                            <button type="button" class="btn btn-default">Infolapa</button>
+                            <button type="button" class="btn btn-default">Pieteikums</button>
+                            <button type="submit" class="btn btn-default">Parreķināt</button>
+                        </div>
+                    </form>
+                </div>
+
+                <h4 class="table-header">Maksājumu grafiks</h4>
+                <div class="table-wrapper">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nr.</th>
+                                        <th>Datums</th>
+                                        <th>Summa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>11/06/2015</td>
+                                        <td>92123.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>11/07/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>11/08/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>11/09/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>11/10/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>11/11/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>11/12/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>11/01/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>11/02/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>11/03/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>11/04/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>11/05/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nr.</th>
+                                        <th>Datums</th>
+                                        <th>Summa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>11/06/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>11/07/2015</td>
+                                        <td>12392.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>11/08/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>11/09/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>11/10/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>11/11/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>11/12/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>11/01/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>11/02/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>11/03/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>11/04/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>11/05/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-3">
+                           <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nr.</th>
+                                        <th>Datums</th>
+                                        <th>Summa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>11/06/2015</td>
+                                        <td>12392.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>11/07/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>11/08/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>11/09/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>11/10/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>11/11/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>11/12/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>11/01/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>11/02/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>11/03/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>11/04/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>11/05/2015</td>
+                                        <td>92.87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nr.</th>
+                                        <th>Datums</th>
+                                        <th>Summa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<footer>
+    <span class="center-block">© 2013, AS "LATEKO LĪZINGS" Katlakalna iela 1, Rīga, LV-1073, Reģ. Nr.: 40003366651</span>
+</footer>
+
+
+    <!--[if (!IE)|(gt IE 8)]><!-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <![endif]-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/localization/messages_lv.min.js"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
